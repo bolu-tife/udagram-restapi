@@ -19,7 +19,7 @@ router.get('/', async (req: Request, res: Response) => {
 //@TODO
 //Add an endpoint to GET a specific resource by Primary Key
 router.get('/:id',
-    // requireAuth,
+    requireAuth,
     async (req: Request, res: Response) => {
     const itemId = req.params.id;
 
